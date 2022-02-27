@@ -42,7 +42,7 @@ module.exports = {
         ignored: ['**/node_modules']
     },
 
-    entry: path.resolve(__dirname, "src", "index.js"),
+    entry: ["regenerator-runtime/runtime.js", path.resolve(__dirname, "src", "index.js")],
 
     output: {
         path: packageFolder,
