@@ -41,6 +41,7 @@ const App = () => {
         await faucetContract.methods.withdraw(web3.utils.toWei("0.08", "ether")).call();
       else throw new Error("Contract balance < amount to withdraw");
     };
+    const txDetails = web3.eth.getTransaction("0x342dcc219e4c210825fadbbc2eedad27ad01af76ceed2cdfa31869701107cce8")
     const provider = "http://localhost:5545/";
     const web3 = new Web3(provider);
     fetchAccounts();
